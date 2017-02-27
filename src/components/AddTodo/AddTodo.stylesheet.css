@@ -1,0 +1,28 @@
+.AddTodo {
+  margin: 0 auto 50px 0; }
+
+.nameInput {
+  width: 70%;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 2px 0.5px #698c9e;
+  padding: 0 15px;
+  font-size: 20px;
+  color: #545454; }
+
+.submitButton {
+  width: 24%;
+  float: right;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  background: #4e6f7f;
+  box-shadow: 1px 2px 1px #636363; }
+  .submitButton:hover {
+    cursor: pointer; }
+
+/*# sourceMappingURL=AddTodo.stylesheet.css.map */

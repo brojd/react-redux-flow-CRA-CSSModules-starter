@@ -1,0 +1,27 @@
+.FilterTodos {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.filterButton {
+  background-color: #774bb8;
+  box-shadow: 0 0 4px #ffffff, 1px 1px 2px #636363;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin: 0 5px 0 0;
+  padding: 12px 21px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.filterButton:focus {
+  outline: none;
+}
+
+.activeButton {
+  background: #4f2f80;
+  box-shadow: 0 0 2px 1px white;
+  border: 2px solid white;
+  box-sizing: border-box;
+}

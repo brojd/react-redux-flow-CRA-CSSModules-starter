@@ -1,0 +1,38 @@
+{
+  "name": "react-redux-CRA-CSSmodules-starter",
+  "version": "0.1.0",
+  "devDependencies": {
+    "custom-react-scripts": "0.0.23",
+    "redux-devtools-extension": "^2.13.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "reselect": "^2.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "starter",
+    "boilerplate",
+    "react-router",
+    "custom-react-scripts",
+    "create-react-app"
+  ],
+  "license": "MIT",
+  "author": "Dominik Broj",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dominik791/react-redux-CRA-CSSModules-starter"
+  }
+}

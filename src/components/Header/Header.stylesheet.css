@@ -1,0 +1,14 @@
+.Header {
+  text-align: center;
+  height: 180px; }
+
+.heading {
+  line-height: 120px; }
+
+.logoImg {
+  height: 60px;
+  width: auto; }
+  .logoImg:not(:last-child) {
+    margin-right: 40px; }
+
+/*# sourceMappingURL=Header.stylesheet.css.map */

@@ -1,0 +1,16 @@
+.Header {
+  text-align: center;
+  height: 180px;
+}
+
+.heading {
+  line-height: 120px;
+}
+
+.logoImg {
+  height: 60px;
+  width: auto;
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}

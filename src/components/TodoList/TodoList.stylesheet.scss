@@ -1,0 +1,27 @@
+.TodoList {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 150px;
+}
+
+.currentFilter {
+  text-shadow: 1px 1px #b3b3b3;
+  color: #572b9a;
+}
+
+.todo {
+  font-size: 20px;
+  text-shadow: 0px 0px 1px rgb(78, 111, 127);
+  color: #32424a;
+  padding: 10px;
+  margin-top: 5px;
+  &:hover {
+    background: #ececec;
+    cursor: pointer;
+  }
+  &:hover::after {
+    content: 'toggle it';
+    color: #7649bb;
+    float: right;
+  }
+}
