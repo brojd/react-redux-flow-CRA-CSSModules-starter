@@ -1,10 +1,16 @@
+/* @flow */
+
 import React from 'react';
 import styles from './App.stylesheet.css';
 import Header from '../Header/Header.component';
 import Nav from '../Nav/Nav.component';
 import Footer from '../Footer/Footer.component';
 
-const App = ({ children }) =>
+type AppTypes = {
+  children: any
+};
+
+const App = ({ children }: AppTypes) =>
   <section className={styles.App}>
     <Header />
     <Nav />
