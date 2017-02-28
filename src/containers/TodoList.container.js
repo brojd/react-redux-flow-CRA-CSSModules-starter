@@ -1,4 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+/* @flow */
+
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addTodo, toggleTodo } from '../actions/todos';
 import { setFilter } from '../actions/todosFilter';
@@ -6,9 +8,24 @@ import { getCurrentFilter } from '../selectors/todosFilter.js';
 import { getFilteredTodos } from '../selectors/todos.js';
 import AddTodoName from '../components/AddTodo/AddTodo.component';
 import TodoList from '../components/TodoList/TodoList.component';
+import type { Todo } from '../components/TodoList/TodoList.component';
 import FilterTodos from '../components/FilterTodos/FilterTodos.component';
 
+type Props = {
+  todos: Array<Todo>;
+  currentFilter: string;
+  addTodo: (newTodo: Todo) => { type: string, newTodo: Todo };
+  toggleTodo: (id: number) => { type: string, id: number };
+  setFilter: (filter: string) => { type: string, filter: string };
+}
+
 class TodoListContainer extends Component {
+
+  props: Props;
+
+  handleSubmit: Function;
+  handleFilterChosen: Function;
+  handleTodoClick: Function;
   
   constructor() {
     super();
@@ -17,15 +34,15 @@ class TodoListContainer extends Component {
     this.handleTodoClick = this.handleTodoClick.bind(this);
   }
   
-  handleSubmit(name) {
-    this.props.addTodo({ name: name, completed: false });
+  handleSubmit(name: string): void {
+    this.props.addTodo({ id: 0, name: name, completed: false });
   }
   
-  handleFilterChosen(filter) {
+  handleFilterChosen(filter: string): void {
     this.props.setFilter(filter);
   }
   
-  handleTodoClick(id) {
+  handleTodoClick(id: number): void {
     this.props.toggleTodo(id);
   }
   
@@ -55,11 +72,6 @@ const mapDispatchToProps = {
   addTodo,
   toggleTodo,
   setFilter
-};
-
-TodoListContainer.propTypes = {
-  todos: PropTypes.array,
-  currentFilter: PropTypes.string
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoListContainer);
