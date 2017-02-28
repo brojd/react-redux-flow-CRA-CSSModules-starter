@@ -6,7 +6,7 @@ import classNames from 'classnames';
 
 type Props = {
   filters: Array<string>,
-  onFilterChosen: (filter: string) => void;
+  onFilterChosen: (filter: string) => void
 }
 
 class FilterTodos extends Component {

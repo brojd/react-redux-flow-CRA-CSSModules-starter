@@ -10,9 +10,9 @@ export type Todo = {
 }
 
 type Props = {
-  todos: Array<Todo>;
-  onTodoClick: (id: number) => void;
-  currentFilter: string;
+  todos: Array<Todo>,
+  onTodoClick: (id: number) => void,
+  currentFilter: string
 }
 
 const TodoList = ({ todos, onTodoClick, currentFilter }: Props) => {

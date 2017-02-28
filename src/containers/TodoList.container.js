@@ -12,11 +12,11 @@ import type { Todo } from '../components/TodoList/TodoList.component';
 import FilterTodos from '../components/FilterTodos/FilterTodos.component';
 
 type Props = {
-  todos: Array<Todo>;
-  currentFilter: string;
-  addTodo: (newTodo: Todo) => { type: string, newTodo: Todo };
-  toggleTodo: (id: number) => { type: string, id: number };
-  setFilter: (filter: string) => { type: string, filter: string };
+  todos: Array<Todo>,
+  currentFilter: string,
+  addTodo: (newTodo: Todo) => { type: string, newTodo: Todo },
+  toggleTodo: (id: number) => { type: string, id: number },
+  setFilter: (filter: string) => { type: string, filter: string }
 }
 
 class TodoListContainer extends Component {

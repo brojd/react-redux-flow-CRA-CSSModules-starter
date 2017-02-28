@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import styles from './AddTodo.stylesheet.css';
 
 type Props = {
-  onSubmit: (name: string) => void;
+  onSubmit: (name: string) => void
 }
 
 class AddTodo extends Component {
