@@ -42,6 +42,7 @@ In the root folder you'll find ```.env``` file which is responsible for custom-r
 │   ├── reducers                            # reducers
 │   ├── actions                             # action creators
 │   ├── global_styles                       # global stylesheets used by app
+│   ├── global_types                        # application-wide type declarations
 │   ├── routes.js                           # router and routes
 │   └── index.js                            # file for bootstrping the application
 ├── build                                   # compiled files
