@@ -6,11 +6,11 @@ import Header from '../Header/Header.component';
 import Nav from '../Nav/Nav.component';
 import Footer from '../Footer/Footer.component';
 
-type AppTypes = {
+type Props = {
   children: any
 };
 
-const App = ({ children }: AppTypes) =>
+const App = ({ children }: Props) =>
   <section className={styles.App}>
     <Header />
     <Nav />

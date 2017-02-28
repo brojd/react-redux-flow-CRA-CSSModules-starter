@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import styles from './FilterTodos.stylesheet.css';
 import classNames from 'classnames';
 

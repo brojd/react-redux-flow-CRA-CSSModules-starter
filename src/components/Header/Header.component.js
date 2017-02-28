@@ -1,3 +1,5 @@
+/* @flow */
+
 import React from 'react';
 import styles from './Header.stylesheet.css';
 import logos from './images';

@@ -1,3 +1,5 @@
+/* @flow */
+
 import React from 'react';
 import { IndexLink, Link } from 'react-router';
 import styles from './Nav.stylesheet.css';

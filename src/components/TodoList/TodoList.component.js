@@ -1,9 +1,23 @@
-import React, { PropTypes } from 'react';
+/* @flow */
+
+import React from 'react';
 import styles from './TodoList.stylesheet.css';
 
-const TodoList = ({ todos, onTodoClick, currentFilter }) => {
+type todo = {
+  id: number;
+  name: string;
+  completed: boolean
+}
+
+type Props = {
+  todos: Array<todo>;
+  onTodoClick: (id: number) => void;
+  currentFilter: string;
+}
+
+const TodoList = ({ todos, onTodoClick, currentFilter }: Props) => {
   
-  const handleTodoClick = (id) => {
+  const handleTodoClick = (id: number): void => {
     onTodoClick(id);
   };
   
@@ -19,12 +33,6 @@ const TodoList = ({ todos, onTodoClick, currentFilter }) => {
       ))}
     </ul>
   );
-};
-
-TodoList.propTypes = {
-  todos: PropTypes.arrayOf(PropTypes.object),
-  onTodoClick: PropTypes.func,
-  currentFilter: PropTypes.string
 };
 
 export default TodoList;
