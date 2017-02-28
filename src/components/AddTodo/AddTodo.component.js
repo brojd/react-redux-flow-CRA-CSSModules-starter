@@ -4,7 +4,7 @@ import React, { Component, PropTypes } from 'react';
 import styles from './AddTodo.stylesheet.css';
 
 type Props = {
-  onSubmit: () => void;
+  onSubmit: (name: string) => void;
 }
 
 class AddTodo extends Component {
@@ -15,8 +15,8 @@ class AddTodo extends Component {
     todoName: string
   };
 
-  handleChange: () => void;
-  handleSubmit: () => void;
+  handleChange: Function;
+  handleSubmit: Function;
   
   constructor() {
     super();

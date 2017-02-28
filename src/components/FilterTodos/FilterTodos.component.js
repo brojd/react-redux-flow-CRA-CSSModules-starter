@@ -1,8 +1,21 @@
+/* @flow */
+
 import React, { PropTypes, Component } from 'react';
 import styles from './FilterTodos.stylesheet.css';
 import classNames from 'classnames';
 
+type Props = {
+  filters: Array<string>,
+  onFilterChosen: (filter: string) => void;
+}
+
 class FilterTodos extends Component {
+
+  props: Props;
+
+  state: {
+    currentFilterIndex: number
+  };
   
   constructor() {
     super();
@@ -12,7 +25,7 @@ class FilterTodos extends Component {
     };
   }
   
-  handleFilterChosen = (filter, index) => {
+  handleFilterChosen = (filter: string, index: number): void => {
     this.props.onFilterChosen(filter);
     this.setState({ currentFilterIndex: index });
   };
@@ -35,10 +48,5 @@ class FilterTodos extends Component {
     )
   };
 }
-
-FilterTodos.propTypes = {
-  filters: PropTypes.arrayOf(PropTypes.string),
-  onFilterChosen: PropTypes.func
-};
 
 export default FilterTodos;
