@@ -2,7 +2,7 @@
 
 const initialState = 'ACTIVE';
 
-const counter = (state: string = initialState, action: Object): string => {
+const todosFilter = (state: string = initialState, action: Object): string => {
   switch (action.type) {
     case 'SET_FILTER':
       return action.filter;
@@ -11,4 +11,4 @@ const counter = (state: string = initialState, action: Object): string => {
   }
 };
 
-export default counter;
+export default todosFilter;
