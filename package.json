@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-CRA-CSSmodules-starter",
+  "name": "react-redux-flow-CRA-CSSmodules-starter",
   "version": "0.1.0",
   "devDependencies": {
     "custom-react-scripts": "0.0.23",
@@ -25,6 +25,7 @@
   "keywords": [
     "react",
     "redux",
+    "flow",
     "starter",
     "boilerplate",
     "react-router",

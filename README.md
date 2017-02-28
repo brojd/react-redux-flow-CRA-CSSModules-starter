@@ -1,6 +1,6 @@
-# react-redux-CRA-CSSModules-starter
+# react-redux-flow-CRA-CSSModules-starter
 
-<p>Simple, well-structured, modern boilerplate for React&Redux apps </p>
+<p>Simple, well-structured, modern boilerplate for React&Redux&Flow apps </p>
 
 ## Main features
 
@@ -11,8 +11,9 @@
 4. [react-router 3.0.2](https://github.com/ReactTraining/react-router)
 5. [reselect 2.5.4](https://github.com/reactjs/reselect) - simple “selector” library for Redux
 6. [Redux 3.6.0](http://redux.js.org/) - state container for JavaScript apps
-7. [Jest](https://facebook.github.io/jest/) - test runner
-8. [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension) - to enable redux debugging (please install also [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) to use it)
+7. [Flow](https://flowtype.org/) - as a type checker for JS
+8. [Jest](https://facebook.github.io/jest/) - test runner
+9. [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension) - to enable redux debugging (please install also [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) to use it)
 <br/><br/>
 
 ## Getting started
