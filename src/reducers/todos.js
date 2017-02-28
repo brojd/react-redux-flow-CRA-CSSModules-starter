@@ -1,8 +1,6 @@
 /* @flow */
 
-import type { Todo } from '../components/TodoList/TodoList.component';
-
-type State = Array<Todo>
+type State = Todos;
 
 const initialState = [
   { id: 0, name: '1st task', completed: false },

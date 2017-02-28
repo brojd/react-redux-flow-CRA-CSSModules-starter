@@ -8,11 +8,10 @@ import { getCurrentFilter } from '../selectors/todosFilter.js';
 import { getFilteredTodos } from '../selectors/todos.js';
 import AddTodoName from '../components/AddTodo/AddTodo.component';
 import TodoList from '../components/TodoList/TodoList.component';
-import type { Todo } from '../components/TodoList/TodoList.component';
 import FilterTodos from '../components/FilterTodos/FilterTodos.component';
 
 type Props = {
-  todos: Array<Todo>,
+  todos: Todos,
   currentFilter: string,
   addTodo: (newTodo: Todo) => { type: string, newTodo: Todo },
   toggleTodo: (id: number) => { type: string, id: number },

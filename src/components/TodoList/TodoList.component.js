@@ -3,14 +3,8 @@
 import React from 'react';
 import styles from './TodoList.stylesheet.css';
 
-export type Todo = {
-  id: number,
-  name: string,
-  completed: boolean
-}
-
 type Props = {
-  todos: Array<Todo>,
+  todos: Todos,
   onTodoClick: (id: number) => void,
   currentFilter: string
 }

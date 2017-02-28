@@ -1,7 +1,5 @@
 /* @flow */
 
-import type { Todo } from '../components/TodoList/TodoList.component';
-
 const ADD_TODO: string = 'ADD_TODO';
 export const addTodo = (newTodo: Todo): Object => {
   return {
