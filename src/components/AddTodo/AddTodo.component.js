@@ -1,7 +1,22 @@
+/* @flow */
+
 import React, { Component, PropTypes } from 'react';
 import styles from './AddTodo.stylesheet.css';
 
+type Props = {
+  onSubmit: () => void;
+}
+
 class AddTodo extends Component {
+
+  props: Props;
+
+  state: {
+    todoName: string
+  };
+
+  handleChange: () => void;
+  handleSubmit: () => void;
   
   constructor() {
     super();
@@ -12,11 +27,13 @@ class AddTodo extends Component {
     };
   }
   
-  handleChange(event) {
-    this.setState({ todoName: event.target.value });
+  handleChange(event: Event): void {
+    if (event.target instanceof HTMLInputElement) {
+      this.setState({ todoName: event.target.value });
+    }
   };
   
-  handleSubmit(event) {
+  handleSubmit(event: Event): void {
     event.preventDefault();
     this.props.onSubmit(this.state.todoName);
     this.setState({ todoName: '' });
@@ -36,9 +53,5 @@ class AddTodo extends Component {
     );
   }
 }
-
-AddTodo.propTypes = {
-  onSubmit: PropTypes.func
-};
 
 export default AddTodo;
